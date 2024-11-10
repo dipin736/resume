@@ -1,0 +1,43 @@
+.timeline-section {
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .timeline-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .timeline-item {
+    margin-bottom: 20px;
+  }
+  
+  .timeline-date {
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content;
+  }
+  
+  .timeline-details {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .timeline-item .timeline-date {
+    display: inline-block;
+  }
+  
+  .timeline-item .timeline-details {
+    margin-left: 30px;
+  }
+  

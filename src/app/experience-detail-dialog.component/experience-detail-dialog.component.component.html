@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>{{ job.title }}</h2>
+<mat-dialog-content>
+  <p><strong>Company:</strong> {{ job.company }}</p>
+  <p><strong>Dates:</strong> {{ job.dates }}</p>
+  <p><strong>Location:</strong> {{ job.location }}</p>
+  <p><strong>Description:</strong></p>
+  <ul>
+    <li *ngFor="let item of job.description">{{ item }}</li>
+  </ul>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close class="custom-btn">Close</button>
+</mat-dialog-actions>

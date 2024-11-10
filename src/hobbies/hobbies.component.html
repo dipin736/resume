@@ -1,0 +1,14 @@
+<div class="skills-section">
+  <button mat-raised-button (click)="toggleHobbiesVisibility()" class="custom-btn">
+    {{ showHobbies ? 'Hide Hobbies' : 'Show Hobbies' }}
+  </button>
+  
+  <div *ngIf="showHobbies">
+    <h2>Hobbies</h2>
+    <div class="skill-chips">
+      <mat-chip-list>
+        <mat-chip *ngFor="let hobby of hobbies" class="skill-chip">{{ hobby }}</mat-chip>
+      </mat-chip-list>
+    </div>
+  </div>
+</div>

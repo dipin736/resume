@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
+
+h2 {
+    padding: 8px;
+    border: 2px solid #0073b1;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    margin-bottom: 8px;
+  }
+  
+
+  /* Custom Button Styles */
+.custom-btn {
+  background-color: #3f51b5; /* Primary color (you can change this) */
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+}
+
+.custom-btn:hover {
+  background-color: #303f9f; /* Darker shade on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.5); /* Outline when focused */
+}
+
+.custom-btn:active {
+  background-color: #283593; /* Even darker shade when button is clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}

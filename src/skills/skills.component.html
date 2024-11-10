@@ -1,0 +1,25 @@
+<div class="skills-section">
+  <h2>Technical Skills</h2>
+  <div *ngFor="let skillGroup of technicalSkills" class="skill-category">
+    <h3>{{ skillGroup.category }}</h3>
+    <div class="skill-chips">
+      <mat-chip-list>
+        <mat-chip *ngFor="let skill of skillGroup.skills" class="skill-chip">
+          {{ skill.name }}
+          <div class="rating">
+            <i *ngFor="let star of stars(skill.rating); let i = index" 
+               class="fa fa-star" 
+               [class.filled]="i < skill.rating"></i>
+          </div>
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+  </div>
+
+  <h2>Soft Skills</h2>
+  <div class="skill-chips">
+    <mat-chip-list>
+      <mat-chip *ngFor="let skill of softSkills" class="skill-chip">{{ skill }}</mat-chip>
+    </mat-chip-list>
+  </div>
+</div>

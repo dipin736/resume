@@ -1,0 +1,15 @@
+<div class="timeline-section">
+    <h2>Interactive Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let event of timeline">
+        <div class="timeline-date" (click)="toggleDetails(event)">
+          <span>{{ event.date }}</span>
+        </div>
+        <div *ngIf="event.showDetails" class="timeline-details">
+          <h4>{{ event.title }}</h4>
+          <p>{{ event.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

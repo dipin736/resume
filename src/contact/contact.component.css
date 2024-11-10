@@ -1,0 +1,85 @@
+.contact-card {
+  padding: 16px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px; 
+  background-color: #f9f9f9;
+}
+
+.contact-card-header {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #3f51b5;
+}
+
+.contact-card-content p {
+  margin: 8px 0;
+}
+
+.contact-card a {
+  color: #0073b1;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.contact-form-card {
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.contact-form-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #3f51b5;
+}
+
+.contact-form-content {
+  margin-top: 16px;
+}
+
+.form-field {
+  margin-bottom: 16px;
+}
+
+.form-field label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-field div {
+  color: #e74c3c;
+  font-size: 0.875rem;
+}
+
+button {
+  background-color: #3f51b5;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #b0bec5;
+}
+
+button:hover {
+  background-color: #303f9f;
+}

@@ -1,0 +1,17 @@
+<mat-card class="header-card">
+  <div class="header-content">
+    <img [src]="profilePicture" alt="Profile Picture" class="profile-picture" />
+    <div class="header-details">
+      <h1 class="name">{{ name }}</h1>
+      <p class="title">{{ title }}</p>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:{{ contactEmail }}">{{ contactEmail }}</a></p>
+        <p><strong>Phone:</strong> <a href="tel:{{ contactPhone }}">{{ contactPhone }}</a></p>
+        <p><strong>LinkedIn:</strong> <a href="{{ linkedin }}" target="_blank">{{ linkedin }}</a></p>
+        <p><strong>GitHub:</strong> <a href="{{ github }}" target="_blank">{{ github }}</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <google-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" height="400px" width="100%"></google-map> -->
+</mat-card>
