@@ -1,27 +1,28 @@
-# Resume
+# Resume Builder with Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+This is a dynamic resume builder application built with Angular. The application allows users to create, edit, and download their resumes as PDFs, and also provides a server-side rendering (SSR) version for better SEO and performance.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Dynamic Content**: The resume content is dynamically fetched and rendered based on user input.
+- **PDF Generation**: Users can generate and download their resume in PDF format.
+- **Responsive Design**: The application is designed to be responsive and looks good on various screen sizes.
+- **Server-Side Rendering (SSR)**: The app is configured to support SSR using Angular Universal for better SEO and faster page loading.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: Frontend framework used to build the application.
+- **Angular Material**: UI components for a modern design.
+- **jsPDF**: Library for generating PDF documents.
+- **html2canvas**: Library used to capture HTML elements as images for PDF generation.
+- **Angular Universal**: Framework for server-side rendering of Angular applications.
 
-## Build
+## Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
 
-## Running unit tests
+- **Node.js**: Ensure that you have Node.js installed. You can download it from [here](https://nodejs.org/).
+- **Angular CLI**: Install Angular CLI globally:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+  ```bash
+  npm install -g @angular/cli
