@@ -61,6 +61,11 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "host": "0.0.0.0",
+            "port": 8080,
+            "disableHostCheck": true
+          },
           "configurations": {
             "production": {
               "buildTarget": "resume:build:production"
@@ -74,8 +79,8 @@
         "ssr": {
           "builder": "@nguniversal/express-engine:server",
           "options": {
-            "browserTarget": "resume:build:production", 
-            "serverTarget": "resume:server"  
+            "browserTarget": "resume:build:production",
+            "serverTarget": "resume:server"
           }
         },
         "extract-i18n": {
